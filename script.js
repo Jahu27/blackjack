@@ -11,7 +11,7 @@ var inGame = false
 
 
 function startGame(){
-console.log(playedCard)
+
 $('svg').remove();
 this.playerCards = []
 this.croupierCards = []
@@ -256,7 +256,7 @@ function winning(){
     var datas = winningCodintion();
     var whoWinned = datas[0]
     var isBlackJack = datas[1]
-    console.log(whoWinned + " " + isBlackJack)
+   
     $("#options button:nth-child(1)").removeAttr("disabled") 
     $("#options button:nth-child(2)").removeAttr("disabled")
     $("#setGame").css("display", "block");
