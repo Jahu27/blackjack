@@ -131,7 +131,7 @@ function cardAdder(isCroupier,firstCard){
     }else{
         playerCards.push(cardValue(cardNumb))
         $("#plCard").append(card);
-        console.log(playerCards)
+        
         
     }
     $("#playerAmount").html("Your card amount " + getAmount(false));
