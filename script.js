@@ -75,7 +75,7 @@ function start(){
             $("#noBet").html("fist add some bet to start")
         }
     else{
-        console.log(playedCard)
+        
         startGame()
         $("#options button:nth-child(1)").removeAttr("disabled") 
         $("#options button:nth-child(2)").attr("disabled")
