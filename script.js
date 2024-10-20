@@ -15,10 +15,11 @@ function startGame(){
 $('svg').remove();
 this.playerCards = []
 this.croupierCards = []
-playedCard['0'] = []
-playedCard['1'] = []
-playedCard['2'] = []
-playedCard['3'] = []
+
+for(var i =0; i<4 ;i++){
+
+    playedCard[i.toString()] = []
+}
 
 
 }
@@ -75,7 +76,6 @@ function start(){
             $("#noBet").html("fist add some bet to start")
         }
     else{
-        
         startGame()
         $("#options button:nth-child(1)").removeAttr("disabled") 
         $("#options button:nth-child(2)").attr("disabled")
